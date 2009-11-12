@@ -1,0 +1,6 @@
+Relation VH: 1380598 elements
+Relation FH: 3692 elements
+Relation HFH: 758727 elements
+Relation reachableM: 8683 elements
+Relation reachableI: 24212 elements
+Relation IM: 35043 elements

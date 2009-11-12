@@ -1,0 +1,43 @@
+System Properties [working directory is '/home/dai/prog/chord/asgn/tests/philo/chord']:
+chord.main.class: benchmark.Philo
+chord.class.path: ../classes/
+chord.src.path: ../src/
+chord.out: log.txt
+chord.err: log.txt
+chord.builder.class: chord.program.builders.SootProgramBuilder
+chord.serial.file: program.ser
+chord.analysis.list: virtIM
+chord.java.analysis.path: /home/dai/prog/chord/asgn/classes
+chord.dlog.analysis.path: /home/dai/prog/chord/asgn/dlog
+chord.annot.include.file: null
+chord.annot.exclude.file: null
+chord.ignore.methods.bysign.file: null
+chord.ignore.methods.byctnr.file: null
+chord.transform.rem.syncs: true
+chord.transform.rem.loops: true
+chord.transform.rem.skips: true
+chord.transform.ssa: true
+chord.print.program: false
+sun.boot.class.path: /usr/java/jdk1.6.0_14/jre/lib/resources.jar:/usr/java/jdk1.6.0_14/jre/lib/rt.jar:/usr/java/jdk1.6.0_14/jre/lib/sunrsasign.jar:/usr/java/jdk1.6.0_14/jre/lib/jsse.jar:/usr/java/jdk1.6.0_14/jre/lib/jce.jar:/usr/java/jdk1.6.0_14/jre/lib/charsets.jar:/usr/java/jdk1.6.0_14/jre/classes
+bddbddb.max.heap.size: 1024m
+bddbddb.class.path: /home/dai/prog/chord/lib/bddbddb/bddbddb.jar:/home/dai/prog/chord/lib/bddbddb/javabdd-1.0b2.jar:/home/dai/prog/chord/lib/bddbddb/jdom.jar:/home/dai/prog/chord/lib/bddbddb/jwutil-1.0.jar
+bddbddb.library.path: /home/dai/prog/chord/lib/bddbddb/lib64
+WARNING: Dlog task '/home/dai/prog/chord/asgn/dlog/pa_debug.dlog' is not named via a # name=... line; using its filename itself as its name.
+ENTER: virtIM
+ENTER: I
+ENTER: M
+START: M
+SAVING dom M size: 25232
+LEAVE: M time: 00:00:00 hh:mm:ss
+START: I
+SAVING dom I size: 68195
+LEAVE: I time: 00:00:00 hh:mm:ss
+START: virtIM
+Start reordering
+Garbage collection #1: 500009 nodes / 499913 free / 0.023s / 0.023s total
+End reordering. Went from 96 to 96 nodes, gain = 0% (0.077 sec)
+Garbage collection #2: 500009 nodes / 490235 free / 0.02s / 0.043s total
+Garbage collection #3: 500009 nodes / 483190 free / 0.017s / 0.06s total
+Garbage collection #4: 500009 nodes / 476457 free / 0.019s / 0.079s total
+SAVING rel virtIM size: 34737
+LEAVE: virtIM time: 00:00:01 hh:mm:ss

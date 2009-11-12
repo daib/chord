@@ -1,0 +1,48 @@
+System Properties [working directory is '/home/dai/prog/chord/asgn/tests/philo/chord']:
+chord.main.class: benchmark.Philo
+chord.class.path: ../classes/
+chord.src.path: ../src/
+chord.out: log.txt
+chord.err: log.txt
+chord.builder.class: chord.program.builders.SootProgramBuilder
+chord.serial.file: program.ser
+chord.analysis.list: MmethArg
+chord.java.analysis.path: /home/dai/prog/chord/asgn/classes
+chord.dlog.analysis.path: /home/dai/prog/chord/asgn/dlog
+chord.annot.include.file: null
+chord.annot.exclude.file: null
+chord.ignore.methods.bysign.file: null
+chord.ignore.methods.byctnr.file: null
+chord.transform.rem.syncs: true
+chord.transform.rem.loops: true
+chord.transform.rem.skips: true
+chord.transform.ssa: true
+chord.print.program: false
+sun.boot.class.path: /usr/java/jdk1.6.0_14/jre/lib/resources.jar:/usr/java/jdk1.6.0_14/jre/lib/rt.jar:/usr/java/jdk1.6.0_14/jre/lib/sunrsasign.jar:/usr/java/jdk1.6.0_14/jre/lib/jsse.jar:/usr/java/jdk1.6.0_14/jre/lib/jce.jar:/usr/java/jdk1.6.0_14/jre/lib/charsets.jar:/usr/java/jdk1.6.0_14/jre/classes
+bddbddb.max.heap.size: 1024m
+bddbddb.class.path: /home/dai/prog/chord/lib/bddbddb/bddbddb.jar:/home/dai/prog/chord/lib/bddbddb/javabdd-1.0b2.jar:/home/dai/prog/chord/lib/bddbddb/jdom.jar:/home/dai/prog/chord/lib/bddbddb/jwutil-1.0.jar
+bddbddb.library.path: /home/dai/prog/chord/lib/bddbddb/lib64
+WARNING: Dlog task '/home/dai/prog/chord/asgn/dlog/pa_debug.dlog' is not named via a # name=... line; using its filename itself as its name.
+ENTER: MmethArg
+ENTER: M
+START: M
+SAVING dom M size: 25232
+LEAVE: M time: 00:00:00 hh:mm:ss
+ENTER: Z
+START: Z
+SAVING dom Z size: 10
+LEAVE: Z time: 00:00:00 hh:mm:ss
+ENTER: V
+START: V
+SAVING dom V size: 156302
+LEAVE: V time: 00:00:00 hh:mm:ss
+START: MmethArg
+Start reordering
+Garbage collection #1: 500009 nodes / 499899 free / 0.022s / 0.022s total
+End reordering. Went from 110 to 110 nodes, gain = 0% (0.077 sec)
+RelMmethArg method
+Garbage collection #2: 500009 nodes / 441887 free / 0.034s / 0.056s total
+Garbage collection #3: 500009 nodes / 401003 free / 0.029s / 0.085s total
+Garbage collection #4: 500009 nodes / 366227 free / 0.032s / 0.117s total
+SAVING rel MmethArg size: 32795
+LEAVE: MmethArg time: 00:00:01 hh:mm:ss

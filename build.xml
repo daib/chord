@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="chord" default="compile">
+  <property name="chord.home.dir" value="${basedir}"/>
+  <property name="chord.lib.dir" value="${chord.home.dir}/lib"/>
+  <property name="chord.bddbddb.dir" value="${chord.lib.dir}/bddbddb"/>
+  <property name="debuglevel" value="source,lines,vars"/>
+  <property name="target" value="1.5"/>
+  <property name="source" value="1.5"/>
+  <fail unless="sun.arch.data.model"
+	message="Property sun.arch.data.model is not set; it is needed to determine whether JVM is 32 or 64 bit"/>
+  <condition property="chord.buddy.lib.dir"
+	     value="${chord.bddbddb.dir}/lib64"
+	     else="${chord.bddbddb.dir}/lib32">
+    <equals arg1="${sun.arch.data.model}" arg2="64"/>
+  </condition>
+
+  <path id="bddbddb_class_path">
+    <pathelement location="${chord.lib.dir}/bddbddb/bddbddb.jar"/>
+    <pathelement location="${chord.lib.dir}/bddbddb/javabdd-1.0b2.jar"/>
+    <pathelement location="${chord.lib.dir}/bddbddb/jdom.jar"/>
+    <pathelement location="${chord.lib.dir}/bddbddb/jwutil-1.0.jar"/>
+  </path>
+  <property name="bddbddb.class.path" refid="bddbddb_class_path"/>
+
+  <path id="soot_class_path">
+    <fileset dir="${chord.lib.dir}/soot/">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <path id="chord_lib_class_path">
+    <path refid="bddbddb_class_path"/>
+    <path refid="soot_class_path"/>
+    <pathelement location="${chord.lib.dir}/trove-2.0.1_rc1.jar"/>
+    <pathelement location="${chord.lib.dir}/scannotation-1.0.2.jar"/>
+    <pathelement location="${chord.lib.dir}/javassist.jar"/>
+  </path>
+
+  <target name="clean" description="cleanup Chord's .class files">
+    <delete includeemptydirs="true" quiet="true">
+      <fileset dir="main/classes" includes="**/*"/>
+      <fileset dir="asgn/classes" includes="**/*"/>
+    </delete>
+  </target>
+
+  <target name="compile" description="compile Chord's .java files">
+    <javac debug="true" debuglevel="${debuglevel}"
+	   srcdir="main/src" destdir="main/classes"
+           source="${source}" target="${target}">
+      <classpath refid="chord_lib_class_path"/>
+    </javac>
+    <javac debug="true" debuglevel="${debuglevel}"
+	   srcdir="asgn/src" destdir="asgn/classes"
+           source="${source}" target="${target}">
+      <classpath>
+	<path refid="chord_lib_class_path"/>
+	<pathelement location="main/classes"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="run" description="run Chord">
+    <fail unless="chord.work.dir" message="Property chord.work.dir not defined"/>
+    <property file="${chord.work.dir}/chord.properties"/>
+    <property name="chord.max.heap.size" value="2048m"/>
+    <property name="chord.max.stack.size" value="256k"/>
+    <property name="bddbddb.max.heap.size" value="1024m"/>
+    <path id="chord_java_analysis_path">
+      <pathelement location="asgn/classes"/>
+    </path>
+    <path id="chord_dlog_analysis_path">
+      <pathelement location="asgn/dlog"/>
+    </path>
+    <property name="chord.java.analysis.path" refid="chord_java_analysis_path"/>
+    <property name="chord.dlog.analysis.path" refid="chord_dlog_analysis_path"/>
+    <java classname="chord.project.Main"
+	  fork="true" failonerror="true" dir="${chord.work.dir}">
+      <jvmarg value="-showversion"/>
+      <jvmarg value="-Xmx${chord.max.heap.size}"/>
+      <jvmarg value="-Xss${chord.max.stack.size}"/>
+      <syspropertyset>
+        <propertyref prefix="chord."/>
+      </syspropertyset>
+      <sysproperty key="bddbddb.max.heap.size" value="${bddbddb.max.heap.size}"/>
+      <sysproperty key="bddbddb.class.path" value="${bddbddb.class.path}"/>
+      <sysproperty key="bddbddb.library.path" file="${chord.buddy.lib.dir}/"/>
+      <classpath>
+        <path refid="chord_lib_class_path"/>
+        <pathelement location="main/classes"/>
+        <pathelement path="${chord.java.analysis.path}"/>
+      </classpath>
+    </java>
+  </target>
+
+  <target name="pa" description="run cs265 pointer analysis">
+	<property name="chord.analysis.list" value="pa-java"/>
+	<antcall target="run"/>
+  </target>
+  
+  <target name="solve" description="run bddbddb's solver">
+    <fail unless="chord.work.dir" message="Property chord.work.dir not defined"/>
+    <fail unless="chord.dlog.file" message="Property chord.dlog.file not defined"/>
+    <property name="chord.max.tuples" value="1000"/>
+    <java classname="net.sf.bddbddb.Solver"
+          fork="true" failonerror="true" maxmemory="1024m">
+      <sysproperty key="java.library.path" file="${chord.buddy.lib.dir}"/>
+      <sysproperty key="basedir" file="${chord.work.dir}"/>
+      <sysproperty key="maxtuples" value="${chord.max.tuples}"/>
+      <sysproperty key="noisy" value="yes"/>
+      <arg file="${chord.dlog.file}"/>
+      <classpath refid="bddbddb_class_path"/>
+    </java>
+  </target>
+
+  <target name="debug" description="run bddbddb's interactive interpreter">
+    <fail unless="chord.work.dir" message="Property chord.work.dir not defined"/>
+    <fail unless="chord.dlog.file" message="Property chord.dlog.file not defined"/>
+    <java classname="net.sf.bddbddb.Interactive"
+          fork="true" maxmemory="1024m" failonerror="true">
+      <sysproperty key="java.library.path" file="${chord.buddy.lib.dir}/"/>
+      <sysproperty key="basedir" file="${chord.work.dir}"/>
+      <sysproperty key="maxtuples" value="${chord.max.tuples}"/>
+      <arg file="${chord.dlog.file}"/>
+      <classpath refid="bddbddb_class_path"/>
+    </java>
+  </target>
+</project>

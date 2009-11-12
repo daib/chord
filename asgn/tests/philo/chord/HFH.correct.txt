@@ -1,0 +1,10 @@
+H=benchmark/Philo.java:54: r3 = new benchmark.Philo[] F=null H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: char[] name> H=java/lang/String.java:2476: r1 = new char[]
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.lang.Runnable target> H=sun/security/provider/SeedGenerator.java:109: $r35 = new sun.security.provider.SeedGenerator$ThreadedSeedGenerator
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.lang.Runnable target> H=sun/security/provider/SeedGenerator.java:279: $r11_1 = new sun.security.provider.SeedGenerator$ThreadedSeedGenerator$BogusThread
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.lang.ThreadGroup group> H=sun/security/provider/SeedGenerator.java:243: $r4 = new java.lang.ThreadGroup
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.security.AccessControlContext inheritedAccessControlContext> H=java/security/AccessController.java:383: $r1 = new java.security.AccessControlContext
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap inheritableThreadLocals> H=java/lang/ThreadLocal.java:200: $r1 = new java.lang.ThreadLocal$ThreadLocalMap
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<java.lang.Thread: java.lang.Object blockerLock> H=java/lang/Thread.java:195: $r2 = new java.lang.Object
+H=benchmark/Philo.java:56: $r4_1 = new benchmark.Philo F=<benchmark.Philo: benchmark.Table t> H=benchmark/Philo.java:53: $r1 = new benchmark.Table
+H=benchmark/Philo.java:53: $r1 = new benchmark.Table F=<benchmark.Table: boolean[] forks> H=benchmark/Philo.java:8: $r1 = new boolean[]

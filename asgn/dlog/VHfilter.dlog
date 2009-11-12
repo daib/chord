@@ -1,0 +1,43 @@
+# Copyright (c) 2006-07, The Trustees of Stanford University.  All rights reserved.
+# Licensed under the terms of the GNU GPL; see COPYING for details.
+
+# Type filter.
+# Produces relation VHfilter containing each tuple (v,h) such that
+# the type of variable v (say t1) is compatible with the type of
+# objects allocated at site h (say t2), i.e., t2 is a subtype of t1.
+# Example:
+#   Shape  v1;
+#   Circle v2;
+#   Object v3;
+#   ... = new Circle(); // h1
+#   ... = new Object(); // h2
+#   (v1,h1) is in VHfilter assuming Circle is a subtype of Shape,
+#   but not (v1,h2) or (v2,h2) since Object is not a subtype of
+#   Shape or Circle.
+#   Other members of VHfilter are (v2,h1), (v3,h1), and (v3,h2).
+
+# Author: Mayur Naik (mhn@cs.stanford.edu)
+# name=VHfilter-dlog
+
+.include "T.dom"
+.include "H.dom"
+.include "V.dom"
+
+.bddvarorder T0_V0_T1_H0
+
+###
+# Relations
+###
+
+VT(v:V0,t:T0) input
+HT(h:H0,t:T1) input
+sub(t1:T1,t2:T0) input
+
+VHfilter(v:V0,h:H0) output
+
+###
+# Constraints
+###
+
+VHfilter(v,h) :- VT(v,t), HT(h,s), sub(s,t).
+

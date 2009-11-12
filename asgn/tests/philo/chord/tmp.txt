@@ -1,0 +1,36 @@
+System Properties [working directory is '/home/dai/prog/chord/asgn/tests/philo/chord']:
+chord.main.class: benchmark.Philo
+chord.class.path: ../classes/
+chord.src.path: ../src/
+chord.out: log.txt
+chord.err: log.txt
+chord.builder.class: chord.program.builders.SootProgramBuilder
+chord.serial.file: program.ser
+chord.analysis.list: null
+chord.java.analysis.path: /home/dai/prog/chord/asgn/classes
+chord.dlog.analysis.path: /home/dai/prog/chord/asgn/dlog
+chord.annot.include.file: null
+chord.annot.exclude.file: null
+chord.ignore.methods.bysign.file: null
+chord.ignore.methods.byctnr.file: null
+chord.transform.rem.syncs: true
+chord.transform.rem.loops: true
+chord.transform.rem.skips: true
+chord.transform.ssa: true
+chord.print.program: true
+sun.boot.class.path: /usr/java/jdk1.6.0_14/jre/lib/resources.jar:/usr/java/jdk1.6.0_14/jre/lib/rt.jar:/usr/java/jdk1.6.0_14/jre/lib/sunrsasign.jar:/usr/java/jdk1.6.0_14/jre/lib/jsse.jar:/usr/java/jdk1.6.0_14/jre/lib/jce.jar:/usr/java/jdk1.6.0_14/jre/lib/charsets.jar:/usr/java/jdk1.6.0_14/jre/classes
+bddbddb.max.heap.size: 1024m
+bddbddb.class.path: /home/dai/prog/chord/lib/bddbddb/bddbddb.jar:/home/dai/prog/chord/lib/bddbddb/javabdd-1.0b2.jar:/home/dai/prog/chord/lib/bddbddb/jdom.jar:/home/dai/prog/chord/lib/bddbddb/jwutil-1.0.jar
+bddbddb.library.path: /home/dai/prog/chord/lib/bddbddb/lib64
+WARNING: Dlog task '/home/dai/prog/chord/asgn/dlog/pa_debug.dlog' is not named via a # name=... line; using its filename itself as its name.
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.addEntry(HashMap.java:753)
+	at java.util.HashMap.put(HashMap.java:385)
+	at java.util.HashSet.add(HashSet.java:200)
+	at java.util.AbstractCollection.addAll(AbstractCollection.java:305)
+	at chord.program.CFG.getReachingDefs(CFG.java:345)
+	at chord.program.CFG.validate(CFG.java:303)
+	at chord.program.Method.validate(Method.java:408)
+	at chord.program.Type.validate(Type.java:193)
+	at chord.program.Program.validate(Program.java:216)
+	at chord.project.Main.main(Main.java:145)

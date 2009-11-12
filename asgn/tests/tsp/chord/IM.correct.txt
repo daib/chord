@@ -1,0 +1,144 @@
+I=benchmark/Tsp.java:95: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r42] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Tsp.java:94: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r35] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r37, dummy_java.lang.String_14714] rets: [$r38] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:95: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r42, dummy_java.lang.String_14715] rets: [$r43] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r35, dummy_java.lang.String_14713] rets: [$r36] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:95: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r43] rets: [$r44] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r36] rets: [$r37] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r38] rets: [$r39] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:95: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r44] rets: [$r45] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r39] rets: [$r40] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Tsp.java:95: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r43] rets: [$r44] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r36] rets: [$r37] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r38] rets: [$r39] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r37, dummy_java.lang.String_14714] rets: [$r38] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:95: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r42, dummy_java.lang.String_14715] rets: [$r43] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:94: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r35, dummy_java.lang.String_14713] rets: [$r36] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:34: INVK_STATIC <java.lang.Integer: parseInt(java.lang.String)> args: [$r6] rets: [] M=<java.lang.Integer: parseInt(java.lang.String)>
+I=benchmark/Tsp.java:42: INVK_STATIC <java.lang.System: gc()> args: [] rets: [] M=<java.lang.System: gc()>
+I=benchmark/Tsp.java:50: INVK_SPECIAL <java.util.Date: <init>()> args: [$r9] rets: [] M=<java.util.Date: <init>()>
+I=benchmark/Tsp.java:92: INVK_SPECIAL <java.util.Date: <init>()> args: [$r33] rets: [] M=<java.util.Date: <init>()>
+I=benchmark/Tsp.java:92: INVK_VIRTUAL <java.util.Date: getTime()> args: [$r33] rets: [] M=<java.util.Date: getTime()>
+I=benchmark/Tsp.java:50: INVK_VIRTUAL <java.util.Date: getTime()> args: [$r9] rets: [] M=<java.util.Date: getTime()>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_0(args)> args: [] rets: [] M=<benchmark.Tsp: loopFreeMethod_0(args)>
+I=benchmark/Tsp.java:48: INVK_STATIC <benchmark.Tsp: read_tsp(java.lang.String)> args: [r1_1] rets: [] M=<benchmark.Tsp: read_tsp(java.lang.String)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_2(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_2(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_3(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_3(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_1(args)> args: [] rets: [] M=<benchmark.Tsp: loopFreeMethod_1(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_4(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_4(args)>
+I=benchmark/Tsp.java:97: INVK_STATIC <benchmark.TspSolver: MakeTourString(int,int[])> args: [$r47] rets: [] M=<benchmark.TspSolver: MakeTourString(int,int[])>
+I=benchmark/Tsp.java:63: INVK_STATIC <benchmark.TspSolver: calc_bound(int)> args: [] rets: [] M=<benchmark.TspSolver: calc_bound(int)>
+I=benchmark/Tsp.java:81: INVK_VIRTUAL <java.lang.Thread: start()> args: [$r30_1] rets: [] M=<java.lang.Thread: start()>
+I=benchmark/TspSolver.java:491: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r9] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/TspSolver.java:491: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r9, dummy_java.lang.String_4842] rets: [$r10] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:491: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r10] rets: [$r11] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:73: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r7_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/TspSolver.java:73: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r7_1, dummy_java.lang.String_8677_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:132: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r3_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/TspSolver.java:132: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r4_1, dummy_java.lang.String_10660_1] rets: [$r5_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:73: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r8_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:132: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r3_1] rets: [$r4_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:499: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r14_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/TspSolver.java:499: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r16_1, dummy_java.lang.String_4843_1] rets: [$r17_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:318: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r13_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/TspSolver.java:499: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14_1] rets: [$r16_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:318: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14_1] rets: [$r15_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:318: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r13_1, dummy_java.lang.String_11713_1] rets: [$r14_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:491: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r11] rets: [$r12] M=<java.lang.StringBuilder: toString()>
+I=benchmark/TspSolver.java:73: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r9_1] rets: [$r10_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/TspSolver.java:132: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r5_1] rets: [$r6_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/TspSolver.java:491: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r10] rets: [$r11] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:73: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r8_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:132: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r3_1] rets: [$r4_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:499: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r17_1] rets: [$r18_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/TspSolver.java:318: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r15_1] rets: [$r16_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/TspSolver.java:499: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14_1] rets: [$r16_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:318: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14_1] rets: [$r15_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/TspSolver.java:491: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r9, dummy_java.lang.String_4842] rets: [$r10] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:73: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r7_1, dummy_java.lang.String_8677_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:132: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r4_1, dummy_java.lang.String_10660_1] rets: [$r5_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TourElement.java:11: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/PrioQElement.java:11: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/TspSolver.java:499: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r16_1, dummy_java.lang.String_4843_1] rets: [$r17_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/TspSolver.java:318: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r13_1, dummy_java.lang.String_11713_1] rets: [$r14_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Tsp.java:108: INVK_STATIC <java.lang.Integer: parseInt(java.lang.String)> args: [$r6] rets: [] M=<java.lang.Integer: parseInt(java.lang.String)>
+I=benchmark/Tsp.java:115: INVK_STATIC <java.lang.Integer: parseInt(java.lang.String)> args: [$r11_1] rets: [] M=<java.lang.Integer: parseInt(java.lang.String)>
+I=benchmark/TspSolver.java:21: INVK_SPECIAL <java.lang.Integer: <init>(int)> args: [$r2] rets: [] M=<java.lang.Integer: <init>(int)>
+I=benchmark/TspSolver.java:23: INVK_SPECIAL <java.lang.Integer: <init>(int)> args: [$r4] rets: [] M=<java.lang.Integer: <init>(int)>
+I=benchmark/TspSolver.java:22: INVK_SPECIAL <java.lang.Integer: <init>(int)> args: [$r3] rets: [] M=<java.lang.Integer: <init>(int)>
+I=benchmark/TspSolver.java:492: INVK_STATIC <java.lang.System: exit(int)> args: [] rets: [] M=<java.lang.System: exit(int)>
+I=benchmark/TspSolver.java:74: INVK_STATIC <java.lang.System: exit(int)> args: [] rets: [] M=<java.lang.System: exit(int)>
+I=benchmark/TspSolver.java:319: INVK_STATIC <java.lang.System: exit(int)> args: [] rets: [] M=<java.lang.System: exit(int)>
+I=benchmark/Tsp.java:87: INVK_VIRTUAL <java.lang.Thread: join()> args: [$r31_1] rets: [] M=<java.lang.Thread: join()>
+I=benchmark/TspSolver.java:11: INVK_SPECIAL <java.lang.Thread: <init>()> args: [r0] rets: [] M=<java.lang.Thread: <init>()>
+I=benchmark/Tsp.java:112: INVK_SPECIAL <java.util.StringTokenizer: <init>(java.lang.String,java.lang.String)> args: [$r7_1, r4_1, dummy_java.lang.String_5748_1] rets: [] M=<java.util.StringTokenizer: <init>(java.lang.String,java.lang.String)>
+I=benchmark/Tsp.java:114: INVK_VIRTUAL <java.util.StringTokenizer: hasMoreElements()> args: [r5] rets: [] M=<java.util.StringTokenizer: hasMoreElements()>
+I=benchmark/Tsp.java:115: INVK_VIRTUAL <java.util.StringTokenizer: nextElement()> args: [r5] rets: [$r10_1] M=<java.util.StringTokenizer: nextElement()>
+I=benchmark/Tsp.java:107: INVK_SPECIAL <java.io.BufferedReader: <init>(java.io.Reader)> args: [$r1, $r2] rets: [] M=<java.io.BufferedReader: <init>(java.io.Reader)>
+I=benchmark/Tsp.java:108: INVK_VIRTUAL <java.io.BufferedReader: readLine()> args: [r3] rets: [$r6] M=<java.io.BufferedReader: readLine()>
+I=benchmark/Tsp.java:111: INVK_VIRTUAL <java.io.BufferedReader: readLine()> args: [r3] rets: [r4_1] M=<java.io.BufferedReader: readLine()>
+I=benchmark/Tsp.java:107: INVK_SPECIAL <java.io.FileReader: <init>(java.lang.String)> args: [$r2, r0] rets: [] M=<java.io.FileReader: <init>(java.lang.String)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_0(args)> args: [] rets: [] M=<benchmark.Tsp: loopFreeMethod_0(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_5(args)> args: [r3] rets: [] M=<benchmark.Tsp: loopFreeMethod_5(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_1(args)> args: [] rets: [] M=<benchmark.Tsp: loopFreeMethod_1(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_2(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_2(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_3(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_3(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_4(args)> args: [r4] rets: [] M=<benchmark.Tsp: loopFreeMethod_4(args)>
+I=benchmark/Tsp.java:54: INVK_SPECIAL <benchmark.TourElement: <init>()> args: [$r3_1] rets: [] M=<benchmark.TourElement: <init>()>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_5(args)> args: [r3] rets: [] M=<benchmark.Tsp: loopFreeMethod_5(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_6(args)> args: [r5_1] rets: [] M=<benchmark.Tsp: loopFreeMethod_6(args)>
+I=benchmark/Tsp.java:-1: INVK_STATIC <benchmark.Tsp: loopFreeMethod_6(args)> args: [r5] rets: [] M=<benchmark.Tsp: loopFreeMethod_6(args)>
+I=benchmark/Tsp.java:55: INVK_SPECIAL <benchmark.PrioQElement: <init>()> args: [$r12_1] rets: [] M=<benchmark.PrioQElement: <init>()>
+I=benchmark/Tsp.java:77: INVK_SPECIAL <benchmark.TspSolver: <init>()> args: [$r29_1] rets: [] M=<benchmark.TspSolver: <init>()>
+I=benchmark/TspSolver.java:35: INVK_VIRTUAL <benchmark.TspSolver: Worker()> args: [r0] rets: [] M=<benchmark.TspSolver: Worker()>
+I=benchmark/TspSolver.java:174: INVK_STATIC <benchmark.TspSolver: set_best(int,int[])> args: [$r14_1] rets: [] M=<benchmark.TspSolver: set_best(int,int[])>
+I=benchmark/TspSolver.java:94: INVK_STATIC <benchmark.TspSolver: calc_bound(int)> args: [] rets: [] M=<benchmark.TspSolver: calc_bound(int)>
+I=benchmark/TspSolver.java:458: INVK_STATIC <benchmark.TspSolver: find_solvable_tour()> args: [] rets: [] M=<benchmark.TspSolver: find_solvable_tour()>
+I=benchmark/TspSolver.java:42: INVK_STATIC <benchmark.TspSolver: get_tour(int)> args: [] rets: [] M=<benchmark.TspSolver: get_tour(int)>
+I=benchmark/TspSolver.java:540: INVK_STATIC <benchmark.TspSolver: set_best(int,int[])> args: [$r12_1] rets: [] M=<benchmark.TspSolver: set_best(int,int[])>
+I=benchmark/TspSolver.java:307: INVK_STATIC <benchmark.TspSolver: new_tour(int,int)> args: [] rets: [] M=<benchmark.TspSolver: new_tour(int,int)>
+I=benchmark/TspSolver.java:398: INVK_STATIC <benchmark.TspSolver: LEFT_CHILD(int)> args: [] rets: [] M=<benchmark.TspSolver: LEFT_CHILD(int)>
+I=benchmark/TspSolver.java:334: INVK_STATIC <benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)> args: [r4, r5] rets: [] M=<benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)>
+I=benchmark/TspSolver.java:399: INVK_STATIC <benchmark.TspSolver: RIGHT_CHILD(int)> args: [] rets: [] M=<benchmark.TspSolver: RIGHT_CHILD(int)>
+I=benchmark/TspSolver.java:404: INVK_STATIC <benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)> args: [r4_1, r5_1] rets: [] M=<benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)>
+I=benchmark/TspSolver.java:414: INVK_STATIC <benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)> args: [r11_3, r2] rets: [] M=<benchmark.TspSolver: less_than(benchmark.PrioQElement,benchmark.PrioQElement)>
+I=benchmark/TspSolver.java:433: INVK_STATIC <benchmark.TspSolver: split_tour(int)> args: [] rets: [] M=<benchmark.TspSolver: split_tour(int)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_0(args)> args: [$r4] rets: [] M=<benchmark.TspSolver: syncFreeMethod_0(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_1(args)> args: [r0, $r3] rets: [] M=<benchmark.TspSolver: syncFreeMethod_1(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_2(args)> args: [r1, $r4] rets: [] M=<benchmark.TspSolver: syncFreeMethod_2(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_3(args)> args: [$r0] rets: [] M=<benchmark.TspSolver: syncFreeMethod_3(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_4(args)> args: [$r0] rets: [] M=<benchmark.TspSolver: syncFreeMethod_4(args)>
+I=benchmark/TspSolver.java:508: INVK_VIRTUAL <benchmark.TspSolver: visit_nodes(int)> args: [r0] rets: [] M=<benchmark.TspSolver: visit_nodes(int)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_0(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: syncFreeMethod_5(args)> args: [$r0] rets: [] M=<benchmark.TspSolver: syncFreeMethod_5(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_1(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_4(args)> args: [r0, r2] rets: [] M=<benchmark.TspSolver: loopFreeMethod_4(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_3(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_3(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_5(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_5(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_6(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_6(args)>
+I=benchmark/TspSolver.java:48: INVK_VIRTUAL <benchmark.TspSolver: recursive_solve(int)> args: [r0] rets: [] M=<benchmark.TspSolver: recursive_solve(int)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_0(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_1(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_7(args)> args: [r1_1, r2_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_7(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_8(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_8(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_9(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_9(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_10(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_10(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_12(args)> args: [r2_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_12(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_14(args)> args: [] rets: [] M=<benchmark.TspSolver: loopFreeMethod_14(args)>
+I=benchmark/TspSolver.java:545: INVK_VIRTUAL <benchmark.TspSolver: visit_nodes(int)> args: [r0] rets: [] M=<benchmark.TspSolver: visit_nodes(int)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_3(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_3(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_4(args)> args: [r0, r2] rets: [] M=<benchmark.TspSolver: loopFreeMethod_4(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_5(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_5(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_6(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_6(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_7(args)> args: [r1, r2] rets: [] M=<benchmark.TspSolver: loopFreeMethod_7(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_8(args)> args: [r0] rets: [] M=<benchmark.TspSolver: loopFreeMethod_8(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_9(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_9(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_10(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_10(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_11(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_11(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_11(args)> args: [r1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_11(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_12(args)> args: [r2] rets: [] M=<benchmark.TspSolver: loopFreeMethod_12(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_13(args)> args: [r5_1, r4_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_13(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_13(args)> args: [r5_1, r4_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_13(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_14(args)> args: [] rets: [] M=<benchmark.TspSolver: loopFreeMethod_14(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_15(args)> args: [r2_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_15(args)>
+I=benchmark/TspSolver.java:-1: INVK_STATIC <benchmark.TspSolver: loopFreeMethod_15(args)> args: [r2_1] rets: [] M=<benchmark.TspSolver: loopFreeMethod_15(args)>

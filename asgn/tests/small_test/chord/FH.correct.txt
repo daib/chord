@@ -1,0 +1,3 @@
+F=<benchmark.Test: java.lang.Class class> H=benchmark/Test.java:0: dummy_java.lang.Class_381 = new java.lang.Class
+F=<benchmark.MyList: java.lang.Class class> H=benchmark/Test.java:0: dummy_java.lang.Class_805 = new java.lang.Class
+F=<benchmark.Link: java.lang.Class class> H=benchmark/Test.java:0: dummy_java.lang.Class_1343 = new java.lang.Class

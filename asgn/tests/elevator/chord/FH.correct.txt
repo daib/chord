@@ -1,0 +1,5 @@
+F=<benchmark.Elevator: java.lang.Class class> H=benchmark/Elevator.java:0: dummy_java.lang.Class_1099 = new java.lang.Class
+F=<benchmark.Controls: java.lang.Class class> H=benchmark/Controls.java:0: dummy_java.lang.Class_797 = new java.lang.Class
+F=<benchmark.ButtonPress: java.lang.Class class> H=benchmark/ButtonPress.java:0: dummy_java.lang.Class_888 = new java.lang.Class
+F=<benchmark.Lift: java.lang.Class class> H=benchmark/Lift.java:18: dummy_java.lang.Class_6171 = new java.lang.Class
+F=<benchmark.Floor: java.lang.Class class> H=benchmark/Floor.java:0: dummy_java.lang.Class_1596 = new java.lang.Class

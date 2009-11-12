@@ -1,0 +1,11 @@
+I=benchmark/Test.java:-1: INVK_STATIC <benchmark.Test: loopFreeMethod_0(args)> args: [r1, r3] rets: [] M=<benchmark.Test: loopFreeMethod_0(args)>
+I=benchmark/Test.java:-1: INVK_STATIC <benchmark.Test: loopFreeMethod_1(args)> args: [r2, r9] rets: [] M=<benchmark.Test: loopFreeMethod_1(args)>
+I=benchmark/Test.java:8: INVK_SPECIAL <benchmark.MyList: <init>()> args: [$r7] rets: [] M=<benchmark.MyList: <init>()>
+I=benchmark/Test.java:13: INVK_SPECIAL <benchmark.MyList: <init>()> args: [$r8] rets: [] M=<benchmark.MyList: <init>()>
+I=benchmark/Test.java:26: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Test.java:21: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Test.java:-1: INVK_STATIC <benchmark.Test: loopFreeMethod_0(args)> args: [r1, r3] rets: [] M=<benchmark.Test: loopFreeMethod_0(args)>
+I=benchmark/Test.java:-1: INVK_STATIC <benchmark.Test: loopFreeMethod_1(args)> args: [r2, r9] rets: [] M=<benchmark.Test: loopFreeMethod_1(args)>
+I=benchmark/Test.java:11: INVK_VIRTUAL <benchmark.MyList: append(java.lang.Object)> args: [r3, r4_1] rets: [] M=<benchmark.MyList: append(java.lang.Object)>
+I=benchmark/Test.java:16: INVK_VIRTUAL <benchmark.MyList: append(java.lang.Object)> args: [r9, r10_1] rets: [] M=<benchmark.MyList: append(java.lang.Object)>
+I=benchmark/Test.java:29: INVK_SPECIAL <benchmark.Link: <init>()> args: [$r2] rets: [] M=<benchmark.Link: <init>()>

@@ -1,0 +1,22 @@
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_1(args)> args: [r3, r2] rets: [] M=<benchmark.Philo: loopFreeMethod_1(args)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_2(args)> args: [r3] rets: [] M=<benchmark.Philo: loopFreeMethod_2(args)>
+I=benchmark/Philo.java:53: INVK_SPECIAL <benchmark.Table: <init>()> args: [$r1] rets: [] M=<benchmark.Table: <init>()>
+I=benchmark/Philo.java:57: INVK_VIRTUAL <java.lang.Thread: start()> args: [$r5_1] rets: [] M=<java.lang.Thread: start()>
+I=benchmark/Philo.java:7: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Philo.java:25: INVK_VIRTUAL <java.lang.Object: notify()> args: [r0] rets: [] M=<java.lang.Object: notify()>
+I=benchmark/Philo.java:17: INVK_VIRTUAL <java.lang.Object: wait()> args: [r0] rets: [] M=<java.lang.Object: wait()>
+I=benchmark/Philo.java:45: INVK_STATIC <java.lang.Math: random()> args: [] rets: [] M=<java.lang.Math: random()>
+I=benchmark/Philo.java:46: INVK_STATIC <java.lang.Thread: sleep(long)> args: [] rets: [] M=<java.lang.Thread: sleep(long)>
+I=benchmark/Philo.java:35: INVK_SPECIAL <java.lang.Thread: <init>()> args: [r0] rets: [] M=<java.lang.Thread: <init>()>
+I=benchmark/Philo.java:60: INVK_VIRTUAL <java.lang.Thread: join()> args: [$r6_1] rets: [] M=<java.lang.Thread: join()>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Philo: loopFreeMethod_0(args)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Philo: loopFreeMethod_0(args)>
+I=benchmark/Philo.java:56: INVK_SPECIAL <benchmark.Philo: <init>(int,benchmark.Table)> args: [$r4_1, r2] rets: [] M=<benchmark.Philo: <init>(int,benchmark.Table)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_1(args)> args: [r3, r2] rets: [] M=<benchmark.Philo: loopFreeMethod_1(args)>
+I=benchmark/Philo.java:44: INVK_VIRTUAL <benchmark.Table: getForks(int)> args: [$r1_1] rets: [] M=<benchmark.Table: getForks(int)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Philo: loopFreeMethod_2(args)> args: [r3] rets: [] M=<benchmark.Philo: loopFreeMethod_2(args)>
+I=benchmark/Philo.java:47: INVK_VIRTUAL <benchmark.Table: putForks(int)> args: [$r2_1] rets: [] M=<benchmark.Table: putForks(int)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Table: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Table: loopFreeMethod_0(args)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Table: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Table: loopFreeMethod_1(args)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Table: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Table: loopFreeMethod_0(args)>
+I=benchmark/Philo.java:-1: INVK_STATIC <benchmark.Table: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Table: loopFreeMethod_1(args)>

@@ -1,0 +1,177 @@
+I=benchmark/Elevator.java:96: INVK_SPECIAL <benchmark.Elevator: <init>()> args: [$r1] rets: [] M=<benchmark.Elevator: <init>()>
+I=benchmark/Elevator.java:97: INVK_SPECIAL <benchmark.Elevator: begin()> args: [r2] rets: [] M=<benchmark.Elevator: begin()>
+I=benchmark/Lift.java:54: INVK_VIRTUAL <java.lang.Thread: start()> args: [r0] rets: [] M=<java.lang.Thread: start()>
+I=benchmark/Controls.java:28: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r6_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6_1, dummy_java.lang.String_16309_1] rets: [$r7_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9_1] rets: [$r10_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:40: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r6_1] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8_1, dummy_java.lang.String_16310_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8_1, dummy_java.lang.String_15668_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6_1, dummy_java.lang.String_15667_1] rets: [$r7_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:42: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r2] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Lift.java:42: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r2, dummy_java.lang.String_7290] rets: [$r3] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r18, $r19] rets: [$r20] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9_1] rets: [$r10_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:42: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r3] rets: [$r4] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:115: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r18] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r20, dummy_java.lang.String_5165] rets: [$r21] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r21, $r22_2] rets: [$r23] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r13, dummy_java.lang.String_15525] rets: [$r14] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r11] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Lift.java:130: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r3] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r3, $r4] rets: [$r5] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r16, dummy_java.lang.String_15526] rets: [$r17] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r5, dummy_java.lang.String_15524] rets: [$r6] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r6] rets: [$r7] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r11, $r12] rets: [$r13] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_SPECIAL <java.lang.StringBuilder: <init>()> args: [$r3] rets: [] M=<java.lang.StringBuilder: <init>()>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6, dummy_java.lang.String_18136] rets: [$r7] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8, dummy_java.lang.String_18137] rets: [$r9] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r3, $r5] rets: [$r6] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r17] rets: [$r18] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14] rets: [$r16] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9] rets: [$r10] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7] rets: [$r8] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r10_1] rets: [$r11_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9_1] rets: [$r10_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6_1, dummy_java.lang.String_16309_1] rets: [$r7_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Elevator.java:24: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Controls.java:19: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r10_1] rets: [$r11_1] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Lift.java:42: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r4] rets: [$r5] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r23] rets: [$r24] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r7] rets: [$r8] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7_1] rets: [$r8_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9_1] rets: [$r10_1] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:42: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r3] rets: [$r4] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r6] rets: [$r7] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r18] rets: [$r19] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: toString()> args: [$r10] rets: [$r11] M=<java.lang.StringBuilder: toString()>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r17] rets: [$r18] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r14] rets: [$r16] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r9] rets: [$r10] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(int)> args: [$r7] rets: [$r8] M=<java.lang.StringBuilder: append(int)>
+I=benchmark/Controls.java:28: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8_1, dummy_java.lang.String_16310_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8_1, dummy_java.lang.String_15668_1] rets: [$r9_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Controls.java:40: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6_1, dummy_java.lang.String_15667_1] rets: [$r7_1] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:42: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r2, dummy_java.lang.String_7290] rets: [$r3] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r18, $r19] rets: [$r20] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r20, dummy_java.lang.String_5165] rets: [$r21] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r21, $r22_2] rets: [$r23] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r13, dummy_java.lang.String_15525] rets: [$r14] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r3, $r4] rets: [$r5] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r16, dummy_java.lang.String_15526] rets: [$r17] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r5, dummy_java.lang.String_15524] rets: [$r6] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/ButtonPress.java:26: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r11, $r12] rets: [$r13] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r6, dummy_java.lang.String_18136] rets: [$r7] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r8, dummy_java.lang.String_18137] rets: [$r9] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.StringBuilder: append(java.lang.String)> args: [$r3, $r5] rets: [$r6] M=<java.lang.StringBuilder: append(java.lang.String)>
+I=benchmark/Floor.java:26: INVK_SPECIAL <java.lang.Object: <init>()> args: [r0] rets: [] M=<java.lang.Object: <init>()>
+I=benchmark/Controls.java:30: INVK_SPECIAL <java.lang.Integer: <init>(int)> args: [$r15_1] rets: [] M=<java.lang.Integer: <init>(int)>
+I=benchmark/Controls.java:42: INVK_SPECIAL <java.lang.Integer: <init>(int)> args: [$r15_1] rets: [] M=<java.lang.Integer: <init>(int)>
+I=benchmark/Lift.java:221: INVK_VIRTUAL <java.lang.Integer: intValue()> args: [$r13_1] rets: [] M=<java.lang.Integer: intValue()>
+I=benchmark/Elevator.java:91: INVK_SPECIAL <java.io.IOException: <init>(java.lang.String)> args: [$r2, dummy_java.lang.String_18596] rets: [] M=<java.io.IOException: <init>(java.lang.String)>
+I=benchmark/Elevator.java:63: INVK_STATIC <java.lang.Thread: currentThread()> args: [] rets: [] M=<java.lang.Thread: currentThread()>
+I=benchmark/Elevator.java:81: INVK_STATIC <java.lang.Thread: sleep(long)> args: [] rets: [] M=<java.lang.Thread: sleep(long)>
+I=benchmark/Lift.java:42: INVK_SPECIAL <java.lang.Thread: <init>(java.lang.String)> args: [r0, $r5] rets: [] M=<java.lang.Thread: <init>(java.lang.String)>
+I=benchmark/Lift.java:80: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r2] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:87: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r6] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:115: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r19] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:133: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r12] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:153: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r29] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:143: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r23] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:63: INVK_STATIC <java.lang.Thread: sleep(long)> args: [] rets: [] M=<java.lang.Thread: sleep(long)>
+I=benchmark/Lift.java:67: INVK_STATIC <java.lang.Thread: sleep(long)> args: [] rets: [] M=<java.lang.Thread: sleep(long)>
+I=benchmark/Lift.java:130: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r4] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:188: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r34] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r5] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:98: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r10_1] M=<java.lang.Thread: getName()>
+I=benchmark/Lift.java:105: INVK_VIRTUAL <java.lang.Thread: getName()> args: [r0] rets: [$r14_1] M=<java.lang.Thread: getName()>
+I=benchmark/Elevator.java:30: INVK_SPECIAL <java.util.Vector: <init>()> args: [$r6] rets: [] M=<java.util.Vector: <init>()>
+I=benchmark/Elevator.java:67: INVK_VIRTUAL <java.util.Vector: size()> args: [$r4_1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Controls.java:31: INVK_VIRTUAL <java.util.Vector: size()> args: [$r18_1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Elevator.java:68: INVK_VIRTUAL <java.util.Vector: elementAt(int)> args: [$r5_1] rets: [$r6_1] M=<java.util.Vector: elementAt(int)>
+I=benchmark/Elevator.java:43: INVK_VIRTUAL <java.util.Vector: addElement(java.lang.Object)> args: [$r7_1, $r8_1] rets: [] M=<java.util.Vector: addElement(java.lang.Object)>
+I=benchmark/Controls.java:111: INVK_SPECIAL <java.util.Vector: <init>()> args: [$r10_1] rets: [] M=<java.util.Vector: <init>()>
+I=benchmark/Controls.java:124: INVK_SPECIAL <java.util.Vector: <init>()> args: [$r10_1] rets: [] M=<java.util.Vector: <init>()>
+I=benchmark/Controls.java:43: INVK_VIRTUAL <java.util.Vector: size()> args: [$r18_1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Controls.java:86: INVK_VIRTUAL <java.util.Vector: size()> args: [$r7_1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Controls.java:98: INVK_VIRTUAL <java.util.Vector: size()> args: [$r7_1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Controls.java:30: INVK_VIRTUAL <java.util.Vector: addElement(java.lang.Object)> args: [$r14_1, $r15_1] rets: [] M=<java.util.Vector: addElement(java.lang.Object)>
+I=benchmark/Controls.java:42: INVK_VIRTUAL <java.util.Vector: addElement(java.lang.Object)> args: [$r14_1, $r15_1] rets: [] M=<java.util.Vector: addElement(java.lang.Object)>
+I=benchmark/Floor.java:27: INVK_SPECIAL <java.util.Vector: <init>()> args: [$r1] rets: [] M=<java.util.Vector: <init>()>
+I=benchmark/Floor.java:28: INVK_SPECIAL <java.util.Vector: <init>()> args: [$r2] rets: [] M=<java.util.Vector: <init>()>
+I=benchmark/Lift.java:218: INVK_VIRTUAL <java.util.Vector: size()> args: [r1] rets: [] M=<java.util.Vector: size()>
+I=benchmark/Lift.java:220: INVK_VIRTUAL <java.util.Vector: elements()> args: [r1] rets: [r4] M=<java.util.Vector: elements()>
+I=benchmark/Lift.java:220: INVK_INTERFACE <java.util.Enumeration: hasMoreElements()> args: [r4] rets: [] M=<java.util.Vector$1: hasMoreElements()>
+I=benchmark/Lift.java:221: INVK_INTERFACE <java.util.Enumeration: nextElement()> args: [r4] rets: [$r12_1] M=<java.util.Vector$1: nextElement()>
+I=benchmark/Elevator.java:25: INVK_SPECIAL <java.io.InputStreamReader: <init>(java.io.InputStream)> args: [$r4, $r1] rets: [] M=<java.io.InputStreamReader: <init>(java.io.InputStream)>
+I=benchmark/Elevator.java:26: INVK_SPECIAL <java.io.StreamTokenizer: <init>(java.io.Reader)> args: [$r5, r2] rets: [] M=<java.io.StreamTokenizer: <init>(java.io.Reader)>
+I=benchmark/Elevator.java:28: INVK_VIRTUAL <java.io.StreamTokenizer: parseNumbers()> args: [r3] rets: [] M=<java.io.StreamTokenizer: parseNumbers()>
+I=benchmark/Elevator.java:27: INVK_VIRTUAL <java.io.StreamTokenizer: lowerCaseMode(boolean)> args: [r3] rets: [] M=<java.io.StreamTokenizer: lowerCaseMode(boolean)>
+I=benchmark/Elevator.java:88: INVK_VIRTUAL <java.io.StreamTokenizer: nextToken()> args: [r1] rets: [] M=<java.io.StreamTokenizer: nextToken()>
+I=benchmark/Elevator.java:34: INVK_SPECIAL <benchmark.Elevator: readNum(java.io.StreamTokenizer)> args: [r0, r3] rets: [] M=<benchmark.Elevator: readNum(java.io.StreamTokenizer)>
+I=benchmark/Elevator.java:35: INVK_SPECIAL <benchmark.Elevator: readNum(java.io.StreamTokenizer)> args: [r0, r3] rets: [] M=<benchmark.Elevator: readNum(java.io.StreamTokenizer)>
+I=benchmark/Elevator.java:42: INVK_SPECIAL <benchmark.Elevator: readNum(java.io.StreamTokenizer)> args: [r0, r3] rets: [] M=<benchmark.Elevator: readNum(java.io.StreamTokenizer)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_0(args)> args: [r3, r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_0(args)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_1(args)>
+I=benchmark/Elevator.java:54: INVK_SPECIAL <benchmark.Controls: <init>(int)> args: [$r18] rets: [] M=<benchmark.Controls: <init>(int)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_0(args)> args: [r3, r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_0(args)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_2(args)> args: [r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_2(args)>
+I=benchmark/Elevator.java:39: INVK_SPECIAL <benchmark.Elevator: readNum(java.io.StreamTokenizer)> args: [r0, r3] rets: [] M=<benchmark.Elevator: readNum(java.io.StreamTokenizer)>
+I=benchmark/Elevator.java:41: INVK_SPECIAL <benchmark.Elevator: readNum(java.io.StreamTokenizer)> args: [r0, r3] rets: [] M=<benchmark.Elevator: readNum(java.io.StreamTokenizer)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_1(args)>
+I=benchmark/Elevator.java:-1: INVK_STATIC <benchmark.Elevator: loopFreeMethod_2(args)> args: [r0] rets: [] M=<benchmark.Elevator: loopFreeMethod_2(args)>
+I=benchmark/Elevator.java:74: INVK_VIRTUAL <benchmark.Controls: pushDown(int,int)> args: [$r8_1] rets: [] M=<benchmark.Controls: pushDown(int,int)>
+I=benchmark/Elevator.java:76: INVK_VIRTUAL <benchmark.Controls: pushUp(int,int)> args: [$r9_1] rets: [] M=<benchmark.Controls: pushUp(int,int)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_0(args)> args: [r0, $r4] rets: [] M=<benchmark.Controls: syncFreeMethod_0(args)>
+I=benchmark/Controls.java:53: INVK_VIRTUAL <benchmark.Controls: checkUp(int)> args: [r0] rets: [] M=<benchmark.Controls: checkUp(int)>
+I=benchmark/Controls.java:69: INVK_VIRTUAL <benchmark.Controls: checkDown(int)> args: [r0] rets: [] M=<benchmark.Controls: checkDown(int)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_1(args)> args: [$r4, r0] rets: [] M=<benchmark.Controls: syncFreeMethod_1(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_2(args)> args: [r0, $r5] rets: [] M=<benchmark.Controls: syncFreeMethod_2(args)>
+I=benchmark/Elevator.java:43: INVK_SPECIAL <benchmark.ButtonPress: <init>(int,int,int)> args: [$r8_1] rets: [] M=<benchmark.ButtonPress: <init>(int,int,int)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Controls: loopFreeMethod_0(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_3(args)> args: [r0, $r5] rets: [] M=<benchmark.Controls: syncFreeMethod_3(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_4(args)> args: [r0, $r4] rets: [] M=<benchmark.Controls: syncFreeMethod_4(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_5(args)> args: [r0, $r4] rets: [] M=<benchmark.Controls: syncFreeMethod_5(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_6(args)> args: [r0, $r5] rets: [r2] M=<benchmark.Controls: syncFreeMethod_6(args)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: syncFreeMethod_7(args)> args: [r0, $r5] rets: [r2] M=<benchmark.Controls: syncFreeMethod_7(args)>
+I=benchmark/Elevator.java:57: INVK_SPECIAL <benchmark.Lift: <init>(int,benchmark.Controls)> args: [$r19_1, $r20_1] rets: [] M=<benchmark.Lift: <init>(int,benchmark.Controls)>
+I=benchmark/Lift.java:80: INVK_VIRTUAL <benchmark.Controls: claimUp(java.lang.String,int)> args: [$r1, $r2] rets: [] M=<benchmark.Controls: claimUp(java.lang.String,int)>
+I=benchmark/Lift.java:87: INVK_VIRTUAL <benchmark.Controls: claimDown(java.lang.String,int)> args: [$r5, $r6] rets: [] M=<benchmark.Controls: claimDown(java.lang.String,int)>
+I=benchmark/Lift.java:143: INVK_VIRTUAL <benchmark.Controls: claimUp(java.lang.String,int)> args: [$r22, $r23] rets: [] M=<benchmark.Controls: claimUp(java.lang.String,int)>
+I=benchmark/Controls.java:-1: INVK_STATIC <benchmark.Controls: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Controls: loopFreeMethod_0(args)>
+I=benchmark/Lift.java:92: INVK_VIRTUAL <benchmark.Controls: getDownPeople(int)> args: [$r7] rets: [$r8] M=<benchmark.Controls: getDownPeople(int)>
+I=benchmark/Lift.java:85: INVK_VIRTUAL <benchmark.Controls: getUpPeople(int)> args: [$r3] rets: [$r4] M=<benchmark.Controls: getUpPeople(int)>
+I=benchmark/Lift.java:145: INVK_VIRTUAL <benchmark.Controls: getUpPeople(int)> args: [$r24] rets: [$r25] M=<benchmark.Controls: getUpPeople(int)>
+I=benchmark/Lift.java:153: INVK_VIRTUAL <benchmark.Controls: claimDown(java.lang.String,int)> args: [$r28, $r29] rets: [] M=<benchmark.Controls: claimDown(java.lang.String,int)>
+I=benchmark/Lift.java:105: INVK_VIRTUAL <benchmark.Controls: claimDown(java.lang.String,int)> args: [$r13_1, $r14_1] rets: [] M=<benchmark.Controls: claimDown(java.lang.String,int)>
+I=benchmark/Lift.java:98: INVK_VIRTUAL <benchmark.Controls: claimUp(java.lang.String,int)> args: [$r9_1, $r10_1] rets: [] M=<benchmark.Controls: claimUp(java.lang.String,int)>
+I=benchmark/Lift.java:155: INVK_VIRTUAL <benchmark.Controls: getDownPeople(int)> args: [$r30] rets: [$r31] M=<benchmark.Controls: getDownPeople(int)>
+I=benchmark/Lift.java:92: INVK_SPECIAL <benchmark.Lift: addPeople(java.util.Vector)> args: [r0, $r8] rets: [] M=<benchmark.Lift: addPeople(java.util.Vector)>
+I=benchmark/Lift.java:85: INVK_SPECIAL <benchmark.Lift: addPeople(java.util.Vector)> args: [r0, $r4] rets: [] M=<benchmark.Lift: addPeople(java.util.Vector)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_0(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_1(args)>
+I=benchmark/Controls.java:21: INVK_SPECIAL <benchmark.Floor: <init>()> args: [$r3_1] rets: [] M=<benchmark.Floor: <init>()>
+I=benchmark/Lift.java:175: INVK_SPECIAL <benchmark.Lift: stopsBelow()> args: [r0] rets: [] M=<benchmark.Lift: stopsBelow()>
+I=benchmark/Lift.java:180: INVK_SPECIAL <benchmark.Lift: stopsAbove()> args: [r0] rets: [] M=<benchmark.Lift: stopsAbove()>
+I=benchmark/Lift.java:145: INVK_SPECIAL <benchmark.Lift: addPeople(java.util.Vector)> args: [r0, $r25] rets: [] M=<benchmark.Lift: addPeople(java.util.Vector)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_2(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_2(args)>
+I=benchmark/Lift.java:167: INVK_SPECIAL <benchmark.Lift: stopsBelow()> args: [r0] rets: [] M=<benchmark.Lift: stopsBelow()>
+I=benchmark/Lift.java:162: INVK_SPECIAL <benchmark.Lift: stopsAbove()> args: [r0] rets: [] M=<benchmark.Lift: stopsAbove()>
+I=benchmark/Lift.java:155: INVK_SPECIAL <benchmark.Lift: addPeople(java.util.Vector)> args: [r0, $r31] rets: [] M=<benchmark.Lift: addPeople(java.util.Vector)>
+I=benchmark/Lift.java:64: INVK_SPECIAL <benchmark.Lift: doIdle()> args: [r0] rets: [] M=<benchmark.Lift: doIdle()>
+I=benchmark/Lift.java:68: INVK_SPECIAL <benchmark.Lift: doMoving()> args: [r0] rets: [] M=<benchmark.Lift: doMoving()>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_3(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_3(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_4(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_4(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_0(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_0(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_1(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_1(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_5(args)> args: [r4, r0] rets: [] M=<benchmark.Lift: loopFreeMethod_5(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_2(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_2(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_3(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_3(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_4(args)> args: [r0] rets: [] M=<benchmark.Lift: loopFreeMethod_4(args)>
+I=benchmark/Lift.java:-1: INVK_STATIC <benchmark.Lift: loopFreeMethod_5(args)> args: [r4, r0] rets: [] M=<benchmark.Lift: loopFreeMethod_5(args)>

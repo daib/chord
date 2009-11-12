@@ -1,0 +1,2 @@
+F=<benchmark.Philo: java.lang.Class class> H=benchmark/Philo.java:0: dummy_java.lang.Class_1579 = new java.lang.Class
+F=<benchmark.Table: java.lang.Class class> H=benchmark/Philo.java:0: dummy_java.lang.Class_1384 = new java.lang.Class

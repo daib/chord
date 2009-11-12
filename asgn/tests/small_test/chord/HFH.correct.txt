@@ -1,0 +1,3 @@
+H=benchmark/Test.java:8: $r7 = new benchmark.MyList F=<benchmark.MyList: benchmark.Link tail> H=benchmark/Test.java:29: $r2 = new benchmark.Link
+H=benchmark/Test.java:13: $r8 = new benchmark.MyList F=<benchmark.MyList: benchmark.Link tail> H=benchmark/Test.java:29: $r2 = new benchmark.Link
+H=benchmark/Test.java:29: $r2 = new benchmark.Link F=<benchmark.Link: benchmark.Link next> H=benchmark/Test.java:29: $r2 = new benchmark.Link

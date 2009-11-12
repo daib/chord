@@ -1,0 +1,12 @@
+F=<benchmark.Tsp: java.lang.Class class> H=benchmark/Tsp.java:20: dummy_java.lang.Class_19436 = new java.lang.Class
+F=<benchmark.TourElement: java.lang.Class class> H=benchmark/TourElement.java:0: dummy_java.lang.Class_1583 = new java.lang.Class
+F=<benchmark.PrioQElement: java.lang.Class class> H=benchmark/PrioQElement.java:0: dummy_java.lang.Class_1606 = new java.lang.Class
+F=<benchmark.TspSolver: int[][] weights> H=benchmark/TspSolver.java:15: $r0 = new int[][]
+F=<benchmark.TspSolver: int[] MinTour> H=benchmark/TspSolver.java:20: $r1 = new int[]
+F=<benchmark.TspSolver: java.lang.Integer MinLock> H=benchmark/TspSolver.java:21: $r2 = new java.lang.Integer
+F=<benchmark.TspSolver: java.lang.Integer TourLock> H=benchmark/TspSolver.java:22: $r3 = new java.lang.Integer
+F=<benchmark.TspSolver: java.lang.Integer barrier> H=benchmark/TspSolver.java:23: $r4 = new java.lang.Integer
+F=<benchmark.TspSolver: benchmark.PrioQElement[] PrioQ> H=benchmark/TspSolver.java:24: $r5 = new benchmark.PrioQElement[]
+F=<benchmark.TspSolver: int[] TourStack> H=benchmark/TspSolver.java:25: $r6 = new int[]
+F=<benchmark.TspSolver: benchmark.TourElement[] Tours> H=benchmark/TspSolver.java:26: $r7 = new benchmark.TourElement[]
+F=<benchmark.TspSolver: java.lang.Class class> H=benchmark/TspSolver.java:14: dummy_java.lang.Class_5810 = new java.lang.Class

@@ -1,0 +1,44 @@
+# Copyright (c) 2006-07, The Trustees of Stanford University.  All rights reserved.
+# Licensed under the terms of the GNU GPL; see COPYING for details.
+
+# Class Hierarchy Analysis (CHA)
+# Produces relation cha containing each tuple (m1,t,m2) such that a dynamically
+# dispatching call site (i.e. invoke virtual/interface) with resolved method m1
+# and receiver object with run-time type t has target method m2.
+
+# Author: Mayur Naik (mhn@cs.stanford.edu)
+# name=cha-dlog
+
+.include "T.dom"
+.include "M.dom"
+.include "S.dom"
+
+.bddvarorder S0_M0xM1_T0_T1
+
+###
+# Relations
+###
+
+implsTT(s:T1,t:T0) input
+extnsTT(s:T1,t:T0) input
+statM(m:M0) input
+initM(m:M0) input
+privateM(m:M0) input
+TM(t:T0,m:M0) input
+classT(t:T0) input
+MS(m:M0,s:S0) input
+relevantTM(t:T0,m:M0) 
+relevantClassTM(t:T0,m:M0) 
+TS(t:T0,s:S0)
+cha(n:M1,t:T1,m:M0) output
+
+relevantTM(t,m) :- !initM(m), !statM(m), !privateM(m), TM(t,m).
+relevantTM(t,m) :- implsTT(t,t2), relevantTM(t2,m).
+relevantTM(t,m) :- extnsTT(t,t2), relevantTM(t2,m).
+relevantClassTM(t,m) :- relevantTM(t,m), classT(t).
+
+TS(t,s) :- TM(t,m), MS(m,s).
+
+cha(m1,t,m2) :- relevantClassTM(t,m1), MS(m1,s), MS(m2,s), TM(t,m2).
+cha(m1,t,m2) :- relevantClassTM(t,m1), MS(m1,s), !TS(t,s), extnsTT(t,t1), cha(m1,t1,m2).
+
