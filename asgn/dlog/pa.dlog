@@ -35,6 +35,9 @@ MgetStatFldInst(m:M0,l:V0,f:F0) input
 MputStatFldInst(m:M0,f:F0,r:V0) input
 clinitM(m:M0) input
 
+calledMethods(m:M0)
+mRelation(n:M1, m:M0)
+
 VH(v:V0,h:H0) output
 FH(f:F0,h:H0) output
 HFH(h1:H0,f:F0,h2:H1) output
@@ -44,17 +47,35 @@ IM(i:I0,m:M0) output
 # Intermediate Relations
 ###
 
+
 # cs265: declare any relations here that you want to store
 # intermediate results.  Qualify them as output relations
 # (just as VH, FH, HFH, and IM above) so that you can debug
 # their contents.  Alternatively, you can leave them
 # unqualified.
 
+IM(i,m) :- statIM(i,m).
+IM(i,m) :- virtIM(i,m).
+IM(i,m) :- specIM(i,m).
+
+calledMethods(0).
+calledMethods(m1) :- calledMethods(m2), MI(m2,i), IM(i,m1).
+#callGraph(m).
+#callGraph(m) :- MI(0,i), IM(i,m).
+#callGraph(m) :- MI(m1, i), IM(i, m), callGraph(m1).
+
 ###
 # Constraints
 ###
 
+VH(v,h) :- calledMethods(m), MobjValAsgnInst(m, v, h).
+
+#VH(v,h) :- MobjValAsgnInst(0, v, h).
+#VH(v,h) :- MobjVarAsgnInst(_, v, v1), VH(v1, h).
+#VH(v,h) :- MgetInstFldInst(_, v, f, b), MputInstFldInst(_, b, f, v1), VH(v1, h).
+
 # cs265: write Datalog rules here specifying how to compute
 # output relations from the input relations
 
-
+FH(0,0).
+HFH(0, 0, 0).
