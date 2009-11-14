@@ -40,7 +40,7 @@ public class RelMputInstFldInst extends ProgramRel {
 								continue;
 							Var b = hVal.getBase();
 							Field f = hVal.getField();
-							add(mVal, v, f, b);
+							add(mVal, b, f, v);
 						}
 					}
 				}
