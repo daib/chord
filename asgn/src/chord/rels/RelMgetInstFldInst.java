@@ -1,13 +1,12 @@
 package chord.rels;
 
 import chord.doms.DomM;
-import chord.doms.DomF;
-import chord.doms.DomV;
 import chord.program.Method;
 import chord.program.Var;
 import chord.program.Field;
 import chord.program.insts.Inst;
 import chord.program.insts.InstFldRefInst;
+import chord.program.insts.AryElemRefInst;
 import chord.project.Chord;
 import chord.project.ProgramRel;
 
@@ -24,21 +23,27 @@ public class RelMgetInstFldInst extends ProgramRel {
         //throw new RuntimeException("cs265: implement this method");
 		DomM domM = (DomM) doms[0];
 
-		int numM = domM.size();
 		for( Method mVal: domM) {
 			if(mVal.hasCFG()) {
 				for (Inst inst : mVal.getCFG().getNodes()) {
 					if (inst instanceof InstFldRefInst) {
-						InstFldRefInst hVal = (InstFldRefInst) inst;
-						if(!hVal.isWr()) {	
-							Var v = hVal.getVar();
+						InstFldRefInst fldRef = (InstFldRefInst) inst;
+						if(!fldRef.isWr()) {	
+							Var v = fldRef.getVar();
 							if(v == null)
 								continue;
-							Var b = hVal.getBase();
-							Field f = hVal.getField();
-							add(mVal, v, f, b);
+							add(mVal, v, fldRef.getField(), fldRef.getBase());
+						}
+					} if (inst instanceof AryElemRefInst) {
+						AryElemRefInst fldRef = (AryElemRefInst) inst;
+						if(!fldRef.isWr()) {	
+							Var v = fldRef.getVar();
+							if(v == null)
+								continue;
+							add(mVal, v, fldRef.getField(), fldRef.getBase());
 						}
 					}
+
 				}
 			}
 		}	

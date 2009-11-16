@@ -6,6 +6,7 @@ import chord.program.Method;
 import chord.program.Var;
 import chord.program.insts.Inst;
 import chord.program.insts.ObjVarAsgnInst;
+import chord.program.insts.PhiExpAsgnInst;
 import chord.project.Chord;
 import chord.project.ProgramRel;
 
@@ -23,20 +24,20 @@ public class RelMobjVarAsgnInst extends ProgramRel {
 	public void fill() {
         //throw new RuntimeException("cs265: implement this method");
 		DomM domM = (DomM) doms[0];
-		DomV domV = (DomV) doms[1];
 		int numM = domM.size();
-		for(int mIdx = 0; mIdx < numM; mIdx++) {
-			Method mVal = domM.get(mIdx);
+		for(Method mVal: domM) {
 			if(mVal.hasCFG()) {
 				for (Inst inst : mVal.getCFG().getNodes()) {
 					if (inst instanceof ObjVarAsgnInst) {
-						ObjVarAsgnInst hVar = (ObjVarAsgnInst) inst;
-						Var lvar = hVar.getLvar();
-						Var rvar = hVar.getRvar();
-						int lvIdx = domV.get(lvar);
-						int rvIdx = domV.get(rvar);
-						add(mIdx, lvIdx, rvIdx);
+						ObjVarAsgnInst varAsgn = (ObjVarAsgnInst) inst;
+						add(mVal, varAsgn.getLvar(), varAsgn.getRvar());
+					} else if (inst instanceof  PhiExpAsgnInst) {
+						PhiExpAsgnInst expAsgn = (PhiExpAsgnInst) inst;
+						for(Var rVar:expAsgn.getRvars()) {
+							add(mVal, expAsgn.getLvar(), rVar);
+						}
 					}
+
 				}
 			}
 		}	

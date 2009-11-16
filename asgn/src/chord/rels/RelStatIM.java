@@ -20,9 +20,11 @@ import chord.project.ProgramRel;
 public class RelStatIM extends ProgramRel {
 	public void fill() {
         //throw new RuntimeException("cs265: implement this method");
+		System.out.println("statIM out");
 		DomI domI = (DomI) doms[0];
 		for (InvkInst invkInst : domI) {
 			if(invkInst.getInvkKind() == InvkKind.INVK_STATIC) {
+				System.out.println("statIM");
 				add(invkInst, invkInst.getRslvMethod());
 			}
 		}

@@ -25,13 +25,12 @@ public class RelMputStatFldInst extends ProgramRel {
 			if(mVal.hasCFG()) {
 				for (Inst inst : mVal.getCFG().getNodes()) {
 					if (inst instanceof StatFldRefInst) {
-						StatFldRefInst hVal = (StatFldRefInst) inst;
-						if(hVal.isWr()) {	
-							Var v = hVal.getVar();
+						StatFldRefInst fldRef = (StatFldRefInst) inst;
+						if(fldRef.isWr()) {	
+							Var v = fldRef.getVar();
 							if(v == null)
 								continue;
-							Field f = hVal.getField();
-							add(mVal, f, v);
+							add(mVal, fldRef.getField(), v);
 						}
 					}
 				}
