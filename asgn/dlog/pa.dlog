@@ -52,53 +52,50 @@ IM(i:I0,m:M0) output
 # their contents.  Alternatively, you can leave them
 # unqualified.
 
-reachableM(m:M0)
-reachableI(i:I0)
+reachableM(m: M0)
+reachableI(i: I0)
 
 ###
 # Constraints
 ###
 
+# call graph
 reachableM(0).
 reachableM(m) :- clinitM(m).
-reachableM(m) :- reachableI(i), IM(i,m).
-#reachableM(m) :- reachableM(m1), MI(m1,i), IM(i,m).
+reachableM(m) :- reachableI(i), IM(i, m).
+#reachableM(m) :- reachableM(m1), MI(m1, i), IM(i, m).
 
-#reachableM(m) :- clinit(m), reachableM(m1), MobjValAsgnInst(m1, v, h), VH(v,h), HT(h,t), TM(t, m) . 
+reachableI(i) :- reachableM(m), MI(m, i).
 
-reachableI(i) :- reachableM(m), MI(m,i).
-
-
-
-
-IM(i,m) :- statIM(i,m).
-IM(i,m) :- specIM(i,m).
-#IM(i,m) :- virtIM(i,m).
-IM(i,m) :- virtIM(i,m1), cha(m1, t, m), IinvkArg(i, 0, v), VH(v,h), HT(h,t).
-
-FH(f,h) :- reachableM(m), MputStatFldInst(m, f, v), VH(v,h).
+IM(i, m) :- statIM(i, m).
+IM(i, m) :- specIM(i, m).
+IM(i, m) :- virtIM(i, m1), IinvkArg(i, 0, v), VH(v, h), HT(h, t), cha(m1, t, m).
 
 # 1) v = new h
-VH(v,h) :- reachableM(m), MobjValAsgnInst(m, v, h), VHfilter(v,h). 
+VH(v, h) :- reachableM(m), MobjValAsgnInst(m, v, h), VHfilter(v, h). 
 
 # 2) v = v1
-VH(v,h) :- reachableM(m), MobjVarAsgnInst(m, v, v1), VH(v1, h), VHfilter(v,h).
+VH(v, h) :- reachableM(m), MobjVarAsgnInst(m, v, v1), VH(v1, h), VHfilter(v, h).
 
 # 3) v = b.f, b.f = v1 
-VH(v,h) :- reachableM(m), MgetInstFldInst(m, v, f, b), reachableM(m1), MputInstFldInst(m1, b, f, v1), VH(v1, h), VHfilter(v,h).
+#VH(v, h) :- reachableM(m), MgetInstFldInst(m, v, f, b), reachableM(m1), MputInstFldInst(m1, b, f, v1), VH(v1, h), VHfilter(v, h).
+VH(v, h) :- reachableM(m), MgetInstFldInst(m, v, f, b), VH(b,h1), HFH(h1, f, h), VHfilter(v, h).
 
-# 6) v = b.f where f is static
-VH(v,h) :- reachableM(m), MgetStatFldInst(m, v, f), reachableM(m1), MputStatFldInst(m1, f, v1), VH(v1,h), VHfilter(v,h).
+# 4) b.f = v
+HFH(h1, f, h2) :- reachableM(m), MputInstFldInst(m, b, f, v2), VH(b, h1), VH(v2, h2).
+
+# 5) f = v
+FH(f, h) :- reachableM(m), MputStatFldInst(m, f, v), VH(v, h).
+
+# 6) v = f where f is static
+VH(v, h) :- reachableM(m), MgetStatFldInst(m, v, f), FH(f,h), VHfilter(v, h).
 
 # 7) return statement
 # input arguments v = va
-VH(v,h) :- reachableI(i), IinvkArg(i,n,va), IM(i,m), MmethArg(m, n, v), VH(va, h), VHfilter(v,h).
+VH(v, h) :- reachableI(i), IinvkArg(i, n, va), VH(va, h), IM(i, m), MmethArg(m, n, v), VHfilter(v, h).
+#VH(v,h) :- reachableM(m1), MI(m1,i), IinvkArg(i,n,va), IM(i,m), MmethArg(m, n, v), VH(va, h), VHfilter(v,h).
 
 # return arguments vr = v
-VH(vr,h) :- reachableI(i), IinvkRet(i,n,vr), IM(i,m), MmethRet(m, n, v), VH(v, h), VHfilter(v,h).
+VH(vr, h) :- reachableI(i), IinvkRet(i,n,vr), IM(i,m), MmethRet(m, n, v), VH(v, h), VHfilter(vr, h).
+#VH(vr,h) :- reachableM(m1), MI(m1,i), IinvkRet(i,n,vr), IM(i,m), MmethRet(m, n, v), VH(v, h), VHfilter(vr,h).
 
-# cs265: write Datalog rules here specifying how to compute
-# output relations from the input relations
-
-HFH(h1, f, h2) :- VH(v1, h1), VH(v2, h2), reachableM(m), MputInstFldInst(m, v1, f, v2).
-#HFH(0, 0, 0).
