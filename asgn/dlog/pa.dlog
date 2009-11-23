@@ -52,8 +52,8 @@ IM(i:I0,m:M0) output
 # their contents.  Alternatively, you can leave them
 # unqualified.
 
-reachableM(m: M0)
-reachableI(i: I0)
+reachableM(m: M0) output	
+reachableI(i: I0) output
 
 ###
 # Constraints
@@ -63,13 +63,12 @@ reachableI(i: I0)
 reachableM(0).
 reachableM(m) :- clinitM(m).
 reachableM(m) :- reachableI(i), IM(i, m).
-#reachableM(m) :- reachableM(m1), MI(m1, i), IM(i, m).
 
 reachableI(i) :- reachableM(m), MI(m, i).
 
-IM(i, m) :- statIM(i, m).
-IM(i, m) :- specIM(i, m).
-IM(i, m) :- virtIM(i, m1), IinvkArg(i, 0, v), VH(v, h), HT(h, t), cha(m1, t, m).
+IM(i, m) :- reachableI(i), statIM(i, m).
+IM(i, m) :- reachableI(i), specIM(i, m).
+IM(i, m) :- reachableI(i), virtIM(i, m1), IinvkArg(i, 0, v), VH(v, h), HT(h, t), cha(m1, t, m).
 
 # 1) v = new h
 VH(v, h) :- reachableM(m), MobjValAsgnInst(m, v, h), VHfilter(v, h). 
@@ -77,8 +76,7 @@ VH(v, h) :- reachableM(m), MobjValAsgnInst(m, v, h), VHfilter(v, h).
 # 2) v = v1
 VH(v, h) :- reachableM(m), MobjVarAsgnInst(m, v, v1), VH(v1, h), VHfilter(v, h).
 
-# 3) v = b.f, b.f = v1 
-#VH(v, h) :- reachableM(m), MgetInstFldInst(m, v, f, b), reachableM(m1), MputInstFldInst(m1, b, f, v1), VH(v1, h), VHfilter(v, h).
+# 3) v = b.f 
 VH(v, h) :- reachableM(m), MgetInstFldInst(m, v, f, b), VH(b,h1), HFH(h1, f, h), VHfilter(v, h).
 
 # 4) b.f = v
@@ -93,9 +91,7 @@ VH(v, h) :- reachableM(m), MgetStatFldInst(m, v, f), FH(f,h), VHfilter(v, h).
 # 7) return statement
 # input arguments v = va
 VH(v, h) :- reachableI(i), IinvkArg(i, n, va), VH(va, h), IM(i, m), MmethArg(m, n, v), VHfilter(v, h).
-#VH(v,h) :- reachableM(m1), MI(m1,i), IinvkArg(i,n,va), IM(i,m), MmethArg(m, n, v), VH(va, h), VHfilter(v,h).
 
 # return arguments vr = v
 VH(vr, h) :- reachableI(i), IinvkRet(i,n,vr), IM(i,m), MmethRet(m, n, v), VH(v, h), VHfilter(vr, h).
-#VH(vr,h) :- reachableM(m1), MI(m1,i), IinvkRet(i,n,vr), IM(i,m), MmethRet(m, n, v), VH(v, h), VHfilter(vr,h).
 
